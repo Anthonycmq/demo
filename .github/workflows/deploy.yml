@@ -42,5 +42,5 @@ jobs:
         
     - name: Build and Push Docker Image
       run: |
-        docker build -t ${{ secrets.miacregistry.azurecr.io }}/miacregistry:${{ github.sha }} .
-        docker push ${{ secrets.miacregistry.azurecr.io }}/miacregistry:${{ github.sha }}
+        docker build -t ${{ secrets.ACR_LOGIN_SERVER }}/miacregistry:${{ github.sha }} .
+        docker push ${{ secrets.ACR_LOGIN_SERVER }}/miacregistry:${{ github.sha }}
