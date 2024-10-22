@@ -16,6 +16,6 @@ spec:
         - name: acr-secret
       containers:
       - name: mi-aplicacion
-        image: ${{ secrets.ACR_LOGIN_SERVER }}/mycontainer1234:v1
+        image: ${{ secrets.ACR_LOGIN_SERVER }}/mycontainer1234:v1.0
         ports:
         - containerPort: 8080
