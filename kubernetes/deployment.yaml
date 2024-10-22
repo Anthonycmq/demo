@@ -12,6 +12,8 @@ spec:
       labels:
         app: mi-aplicacion
     spec:
+      imagePullSecrets:
+        - name: acr-secret
       containers:
       - name: mi-aplicacion
         image: ${{ secrets.ACR_LOGIN_SERVER }}/mycontainer1234:v1
