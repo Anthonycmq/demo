@@ -11,7 +11,7 @@ public class DemoApplication {
 
     @GetMapping("/hello")
     public String hello() {
-        return "¡Hola desde mi microservicio! :)";
+        return "¡Hola desde mi microservicio! :/";
     }
 
     public static void main(String[] args) {
