@@ -68,4 +68,4 @@ jobs:
           kubernetes/deployment.yaml
           kubernetes/service.yaml
         images: |
-          ${{ secrets.ACR_LOGIN_SERVER }}/mycontainer1234:${{ github.sha }}
+          ${{ secrets.ACR_LOGIN_SERVER }}/mycontainer1234:v1
