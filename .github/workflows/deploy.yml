@@ -46,8 +46,8 @@ jobs:
         
     - name: Build and Push Docker Image
       run: |
-        docker build -t ${{ secrets.ACR_LOGIN_SERVER }}/mycontainer1234:${{ github.sha }} .
-        docker push ${{ secrets.ACR_LOGIN_SERVER }}/mycontainer1234:${{ github.sha }}
+        docker build -t ${{ secrets.ACR_LOGIN_SERVER }}/mycontainer1234:v1 .
+        docker push ${{ secrets.ACR_LOGIN_SERVER }}/mycontainer1234:v1
     
     - name: Azure Login using Service Principal
       uses: azure/login@v1
